@@ -144,7 +144,7 @@ Sorting on the "Notes" column is a way to see all kernels that have any notes to
 # Help / FAQ
 
 ## Kernel Packages built after 2026-03-25  
-To install 6.19.11 or later on older systems, upgrade debianutills first:  
+To install 6.19.11 or later on older systems, upgrade debianutils first:  
 ```
 $ wget http://security.ubuntu.com/ubuntu/pool/main/d/debianutils/debianutils_5.23.2_amd64.deb
 $ sudo dpkg --install debianutils_5.23.2_amd64.deb
