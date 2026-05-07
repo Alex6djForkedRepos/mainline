@@ -70,9 +70,9 @@ public class DownloadTask : AsyncTask {
 			cmd += "--max-connection-per-server="+App.concurrent_downloads.to_string();
 		}
 
-		if (App.all_proxy.length>0) cmd += "--all-proxy='"+App.all_proxy+"'";
+		if (App.all_proxy.length>0) cmd += "--all-proxy="+App.all_proxy;
 
-		if (App.user_agent.length>0) cmd += "--user-agent='"+App.user_agent+"'";
+		if (App.user_agent.length>0) cmd += "--user-agent="+App.user_agent;
 
 		spawn_args = cmd;
 	}
