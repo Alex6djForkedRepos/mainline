@@ -9,7 +9,7 @@ Homepage: BRANDING_WEBSITE
 Package: BRANDING_SHORTNAME
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, aria2, lsb-release
-Recommends:
+Recommends: pkexec
 Description: Kernel Update Utility for Ubuntu-based distributions
  Utility for installing mainline Linux kernels on Ubuntu-based distributions.
  Downloads and installs kernel packages from kernel.ubuntu.com.

@@ -276,8 +276,8 @@ msgstr "à la connexion"
 msgid ""
 "This file is over-written and executed again whenever settings are saved in"
 msgstr ""
-"Ce fichier est écrasé et exécuté à chaque fois que les paramètres "
-"sont enregistrés dans"
+"Ce fichier est écrasé et exécuté à chaque fois que les paramètres sont "
+"enregistrés dans"
 
 #: src/Common/Main.vala:492
 msgid "Notifications are disabled"
@@ -377,12 +377,15 @@ msgstr "Déverrouiller les noyaux spécifiés"
 
 #: src/Console/AppConsole.vala:49
 msgid "Delete the cached info about available kernels"
-msgstr "Suppression des informations en cache concernant les noyaux disponibles"
+msgstr ""
+"Suppression des informations en cache concernant les noyaux disponibles"
 
 #: src/Console/AppConsole.vala:50
 msgid ""
 "Write the given include/exclude & previous-majors options to the config file"
-msgstr "Enregistrer les options d'inclusion/exclusion & précédentes-majeurs dans le fichier de configuration"
+msgstr ""
+"Enregistrer les options d'inclusion/exclusion & précédentes-majeurs dans le "
+"fichier de configuration"
 
 #: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
 msgid "This help"
@@ -765,7 +768,6 @@ msgid ""
 "higher, instead essentially maintain a local mirror of the entire history "
 "from the mainline-ppa site."
 msgstr ""
-""
 "Ne pas tronquer les fichiers index.html mis en cache juste aux versions "
 "installées et supérieures, au lieu de cela, maintenir essentiellement un "
 "miroir local de l'histoire entière du site mainline-ppa."
@@ -785,16 +787,16 @@ msgid ""
 "deleting and re-downloading the same files if you change the \"prior major "
 "versions\" setting up and down."
 msgstr ""
-"Cela saute une étape à chaque démarrage qui parcourt toutes les versions "
-"de noyaux connus juste pour voir s'il y a des anciennes à supprimer, et "
-"évite de supprimer et re-télécharger les mêmes fichiers vous changez le "
-"réglage \"prior major versions\" à la hausse ou à la baisse."
+"Cela saute une étape à chaque démarrage qui parcourt toutes les versions de "
+"noyaux connus juste pour voir s'il y a des anciennes à supprimer, et évite "
+"de supprimer et re-télécharger les mêmes fichiers vous changez le réglage "
+"\"prior major versions\" à la hausse ou à la baisse."
 
 #: src/Gtk/SettingsWindow.vala:211
 msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
 msgstr ""
-"Depuis la version 6.5.x, un cache intégral fait à peu près 22M, et un "
-"cache tronqué environ 2M." 
+"Depuis la version 6.5.x, un cache intégral fait à peu près 22M, et un cache "
+"tronqué environ 2M."
 
 #: src/Gtk/SettingsWindow.vala:217
 msgid "Proxy"
@@ -838,8 +840,8 @@ msgstr "La liste intégrée contient des exemples des deux."
 msgid ""
 "To modify any of the built-in default commands, just select it and edit."
 msgstr ""
-"Pour modifier n'importe laquelle des commandes intégrées, sélectionnez là "
-"et éditez là simplement."
+"Pour modifier n'importe laquelle des commandes intégrées, sélectionnez là et "
+"éditez là simplement."
 
 #: src/Gtk/SettingsWindow.vala:297 src/Gtk/SettingsWindow.vala:334
 msgid ""

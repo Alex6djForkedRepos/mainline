@@ -1,3 +1,10 @@
+mainline (1.4.14) unstable; urgency=medium
+
+  * #370 ishii-masaki-646 Fix aria2c argv quoting in spawn path (--all-proxy / --user-agent)
+  * #371 make pkexec at least a recommends
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 15 May 2026 14:06:58 -0400
+
 mainline (1.4.13) unstable; urgency=medium
 
   * configurable http client user-agent string
