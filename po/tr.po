@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mainline\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 00:44-0400\n"
+"POT-Creation-Date: 2026-07-10 10:22-0400\n"
 "PO-Revision-Date: 2024-01-05 13:29+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish\n"
@@ -539,7 +539,7 @@ msgstr "büyük sürümler için bildirimler devre dışı bırakıldı"
 msgid "Kernel %s Available"
 msgstr "Çekirdek %s Kullanılabilir"
 
-#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:90
 msgid "Show"
 msgstr "Göster"
 
@@ -631,23 +631,23 @@ msgstr "kullanılabilir"
 msgid "Configuration"
 msgstr "Yapılandırma"
 
-#: src/Gtk/SettingsWindow.vala:24
+#: src/Gtk/SettingsWindow.vala:31
 msgid "Done"
 msgstr "Tamam"
 
-#: src/Gtk/SettingsWindow.vala:40
+#: src/Gtk/SettingsWindow.vala:56
 msgid "Filter"
 msgstr "Süz"
 
-#: src/Gtk/SettingsWindow.vala:47
+#: src/Gtk/SettingsWindow.vala:63
 msgid "Hide RC and unstable releases"
 msgstr "Sürüm Adayı (RC) ve kararsız sürümleri gizle"
 
-#: src/Gtk/SettingsWindow.vala:54
+#: src/Gtk/SettingsWindow.vala:70
 msgid "Hide failed or incomplete builds"
 msgstr "Başarısız veya tamamlanmamış yapıları gizle"
 
-#: src/Gtk/SettingsWindow.vala:57
+#: src/Gtk/SettingsWindow.vala:73
 #, c-format
 msgid ""
 "If a kernel version exists on the mainline-ppa site, but is an incomplete or "
@@ -656,77 +656,77 @@ msgstr ""
 "Mainline-ppa sitesinde bir çekirdek sürümü varsa, ancak mimariniz için "
 "tamamlanmamış veya başarısız bir derlemeyse (%s), listede gösterme."
 
-#: src/Gtk/SettingsWindow.vala:63
+#: src/Gtk/SettingsWindow.vala:79
 #, c-format
 msgid "Hide flavors other than %s"
 msgstr "%s dışındaki türleri gizle"
 
-#: src/Gtk/SettingsWindow.vala:66
+#: src/Gtk/SettingsWindow.vala:82
 #, c-format
 msgid "Don't show the alternative flavors such as %s and %s"
 msgstr "%s ve %s gibi alternatif türleri gösterme"
 
-#: src/Gtk/SettingsWindow.vala:80
+#: src/Gtk/SettingsWindow.vala:96
 msgid "prior major versions  ( -1 = all )"
 msgstr "önceki büyük sürümler ( -1 = tümü )"
 
-#: src/Gtk/SettingsWindow.vala:88
+#: src/Gtk/SettingsWindow.vala:104
 msgid "Notification"
 msgstr "Bildirim"
 
-#: src/Gtk/SettingsWindow.vala:95
+#: src/Gtk/SettingsWindow.vala:111
 msgid "Notify if a major release is available"
 msgstr "Büyük sürüm olduğunda bildir"
 
-#: src/Gtk/SettingsWindow.vala:101
+#: src/Gtk/SettingsWindow.vala:117
 msgid "Notify if a minor release is available"
 msgstr "Küçük sürüm olduğunda bildir"
 
-#: src/Gtk/SettingsWindow.vala:108
+#: src/Gtk/SettingsWindow.vala:124
 msgid "Seconds interval enabled for debugging"
 msgstr "Hata ayıklama için etkinleştirilen saniye aralığı"
 
-#: src/Gtk/SettingsWindow.vala:127
+#: src/Gtk/SettingsWindow.vala:143
 msgid "Check every"
 msgstr "Kontrol sıklığı"
 
-#: src/Gtk/SettingsWindow.vala:137
+#: src/Gtk/SettingsWindow.vala:153
 msgid "Hours"
 msgstr "saat"
 
-#: src/Gtk/SettingsWindow.vala:138
+#: src/Gtk/SettingsWindow.vala:154
 msgid "Days"
 msgstr "gün"
 
-#: src/Gtk/SettingsWindow.vala:139
+#: src/Gtk/SettingsWindow.vala:155
 msgid "Weeks"
 msgstr "hafta"
 
-#: src/Gtk/SettingsWindow.vala:140
+#: src/Gtk/SettingsWindow.vala:156
 msgid "Seconds"
 msgstr "saniye"
 
-#: src/Gtk/SettingsWindow.vala:149
+#: src/Gtk/SettingsWindow.vala:165
 msgid "Network"
 msgstr "Ağ"
 
-#: src/Gtk/SettingsWindow.vala:159
+#: src/Gtk/SettingsWindow.vala:175
 msgid "Connection Timeout:"
 msgstr "Bağlantı Zaman Aşımı:"
 
-#: src/Gtk/SettingsWindow.vala:167
+#: src/Gtk/SettingsWindow.vala:183
 msgid "seconds"
 msgstr "saniye"
 
-#: src/Gtk/SettingsWindow.vala:175
+#: src/Gtk/SettingsWindow.vala:191
 msgid "Concurrent Downloads:"
 msgstr "Eşzamanlı İndirmeler:"
 
-#: src/Gtk/SettingsWindow.vala:185
+#: src/Gtk/SettingsWindow.vala:201
 msgid "Verify Checksums"
 msgstr "Sağlama Toplamlarını Doğrula"
 
-#: src/Gtk/SettingsWindow.vala:188
+#: src/Gtk/SettingsWindow.vala:204
 msgid ""
 "Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
 "downloads."
@@ -734,11 +734,11 @@ msgstr ""
 "*.deb dosyası indirmelerini doğrulamak için CHECKSUMS dosyasındaki sha-256 "
 "karmalarını kullanın."
 
-#: src/Gtk/SettingsWindow.vala:192
+#: src/Gtk/SettingsWindow.vala:208
 msgid "Keep Debs"
 msgstr "Deb Paketlerini Tut"
 
-#: src/Gtk/SettingsWindow.vala:195
+#: src/Gtk/SettingsWindow.vala:211
 msgid ""
 "Retain downloaded *.deb files after install and re-use them for uninstall/"
 "reinstall instead of downloading again."
@@ -746,7 +746,7 @@ msgstr ""
 "Kurulduktan sonra indirilen .deb dosyalarını tut ve yeniden indirmek yerine "
 "kaldırma/yeniden kurulum için yeniden kullanın."
 
-#: src/Gtk/SettingsWindow.vala:197
+#: src/Gtk/SettingsWindow.vala:213
 msgid ""
 "They are still deleted once they become older than the \"prior major "
 "versions\" setting, or if they have been updated on the mainline-ppa site."
@@ -754,11 +754,11 @@ msgstr ""
 "\"Önceki ana sürümler\" ayarından daha eski olduklarında ya da mainline-ppa "
 "sitesinde güncellendiklerinde silinmeye devam ederler."
 
-#: src/Gtk/SettingsWindow.vala:203
+#: src/Gtk/SettingsWindow.vala:219
 msgid "Keep Cache"
 msgstr "Önbelleği Tut"
 
-#: src/Gtk/SettingsWindow.vala:206
+#: src/Gtk/SettingsWindow.vala:222
 msgid ""
 "Don't trim the cached index.html files to just the installed versions and "
 "higher, instead essentially maintain a local mirror of the entire history "
@@ -768,14 +768,14 @@ msgstr ""
 "için azaltma, bunun yerine mainline-ppa sitesindeki tüm geçmişin yerel "
 "yansısını tut."
 
-#: src/Gtk/SettingsWindow.vala:208
+#: src/Gtk/SettingsWindow.vala:224
 msgid ""
 "This speeds up some things a little at the cost of about 20M of hard drive "
 "space."
 msgstr ""
 "Bu, yaklaşık 20Mb sabit disk alanına karşılık bazı şeyleri hızlandırır."
 
-#: src/Gtk/SettingsWindow.vala:209
+#: src/Gtk/SettingsWindow.vala:225
 msgid ""
 "It skips a step on every startup that loops through all known kernel "
 "versions just to see if there are any old ones to delete, and avoids "
@@ -787,85 +787,85 @@ msgstr ""
 "sürümler\" ayarını yukarı ve aşağı değiştirirseniz aynı dosyaları silmeyi ve "
 "yeniden indirmeyi önler."
 
-#: src/Gtk/SettingsWindow.vala:211
+#: src/Gtk/SettingsWindow.vala:227
 msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
 msgstr ""
 "6.5.x itibariyle tam önbellek yaklaşık 22Mb ve azaltılmış önbellek yaklaşık "
 "2Mb."
 
-#: src/Gtk/SettingsWindow.vala:217
+#: src/Gtk/SettingsWindow.vala:233
 msgid "Proxy"
 msgstr "Vekil Sunucu"
 
-#: src/Gtk/SettingsWindow.vala:229
+#: src/Gtk/SettingsWindow.vala:245
 msgid "Mainline-PPA URL"
 msgstr "Mainline-PPA URL"
 
-#: src/Gtk/SettingsWindow.vala:246
+#: src/Gtk/SettingsWindow.vala:262
 msgid "User Agent String"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:261
+#: src/Gtk/SettingsWindow.vala:277
 msgid "External Commands"
 msgstr "Harici Komutlar"
 
-#: src/Gtk/SettingsWindow.vala:268
+#: src/Gtk/SettingsWindow.vala:284
 msgid "Superuser Authorization"
 msgstr "Süper Kullanıcı Yetkilendirmesi"
 
-#: src/Gtk/SettingsWindow.vala:290
+#: src/Gtk/SettingsWindow.vala:306
 msgid "Command used to run dpkg with root permissions."
 msgstr "Kök izinleriyle dpkg'yi çalıştırmak için kullanılan komut."
 
-#: src/Gtk/SettingsWindow.vala:292
+#: src/Gtk/SettingsWindow.vala:308
 #, no-c-format
 msgid "The dpkg command is appended to the end, unless a %s is present."
 msgstr "Bir %s yoksa dpkg komutu sonuna eklenir."
 
-#: src/Gtk/SettingsWindow.vala:293
+#: src/Gtk/SettingsWindow.vala:309
 #, no-c-format
 msgid "If a %s is present, then the %s is replaced with the dpkg command."
 msgstr "Bir %s varsa, %s dpkg komutuyla değiştirilir."
 
-#: src/Gtk/SettingsWindow.vala:294 src/Gtk/SettingsWindow.vala:327
+#: src/Gtk/SettingsWindow.vala:310 src/Gtk/SettingsWindow.vala:343
 msgid "The built-in list contains examples of both."
 msgstr "Yerleşik liste, her ikisinin de örneklerini içerir."
 
-#: src/Gtk/SettingsWindow.vala:296 src/Gtk/SettingsWindow.vala:333
+#: src/Gtk/SettingsWindow.vala:312 src/Gtk/SettingsWindow.vala:349
 msgid ""
 "To modify any of the built-in default commands, just select it and edit."
 msgstr ""
 "Yerleşik öntanımlı komutları değiştirmek için, seçip düzenlemeniz yeterli."
 
-#: src/Gtk/SettingsWindow.vala:297 src/Gtk/SettingsWindow.vala:334
+#: src/Gtk/SettingsWindow.vala:313 src/Gtk/SettingsWindow.vala:350
 msgid ""
 "The edited command is saved in the config file, the original is not changed."
 msgstr ""
 "Düzenlenen komut, yapılandırma dosyasına kaydedilir, özgün hali "
 "değiştirilmez."
 
-#: src/Gtk/SettingsWindow.vala:301
+#: src/Gtk/SettingsWindow.vala:317
 msgid "Terminal Window"
 msgstr "Uçbirim Penceresi"
 
-#: src/Gtk/SettingsWindow.vala:323
+#: src/Gtk/SettingsWindow.vala:339
 msgid "Terminal command used to run"
 msgstr "Çalıştırmak için kullanılan uçbirim komutu"
 
-#: src/Gtk/SettingsWindow.vala:325
+#: src/Gtk/SettingsWindow.vala:341
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
 msgstr "Kur/kaldır komutu, bir %s yoksa sonuna eklenir."
 
-#: src/Gtk/SettingsWindow.vala:326
+#: src/Gtk/SettingsWindow.vala:342
 #, no-c-format
 msgid ""
 "If a %s is present, then the %s is replaced with the install/uninstall "
 "command."
 msgstr "Bir %s mevcutsa, %s'nin yerine kur/kaldır komutu gelir."
 
-#: src/Gtk/SettingsWindow.vala:329
+#: src/Gtk/SettingsWindow.vala:345
 msgid ""
 "The terminal program must stay in the foreground and block while the command "
 "is running, not fork and return immediately."
@@ -873,7 +873,7 @@ msgstr ""
 "Uçbirim programı ön planda kalmalı ve komut çalışırken engellemeli, fork "
 "yapmamalı ve hemen geri dönmemelidir."
 
-#: src/Gtk/SettingsWindow.vala:330
+#: src/Gtk/SettingsWindow.vala:346
 msgid ""
 "Most terminal programs block by default, some require special commandline "
 "options."
@@ -881,7 +881,7 @@ msgstr ""
 "Çoğu uçbirim programı öntanımlı olarak engeller, bazıları özel komut satırı "
 "seçenekleri gerektirir."
 
-#: src/Gtk/SettingsWindow.vala:331
+#: src/Gtk/SettingsWindow.vala:347
 #, c-format
 msgid "For example, %s requires \"%s\"."
 msgstr "Örneğin, %s \"%s\" gerektirir."

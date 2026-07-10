@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mainline\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 00:44-0400\n"
+"POT-Creation-Date: 2026-07-10 10:22-0400\n"
 "PO-Revision-Date: 2020-08-22 15:35+0100\n"
 "Last-Translator: Demetrio Mendozzi\n"
 "Language-Team: Italian\n"
@@ -541,7 +541,7 @@ msgstr "notifica release principali disabilitata"
 msgid "Kernel %s Available"
 msgstr "Kernel %s Disponibile"
 
-#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:90
 msgid "Show"
 msgstr "Mostra"
 
@@ -633,23 +633,23 @@ msgstr "disponibile"
 msgid "Configuration"
 msgstr "Configurazione"
 
-#: src/Gtk/SettingsWindow.vala:24
+#: src/Gtk/SettingsWindow.vala:31
 msgid "Done"
 msgstr "Finito"
 
-#: src/Gtk/SettingsWindow.vala:40
+#: src/Gtk/SettingsWindow.vala:56
 msgid "Filter"
 msgstr "Filtro"
 
-#: src/Gtk/SettingsWindow.vala:47
+#: src/Gtk/SettingsWindow.vala:63
 msgid "Hide RC and unstable releases"
 msgstr "Nascondi RC e rilasci instabili"
 
-#: src/Gtk/SettingsWindow.vala:54
+#: src/Gtk/SettingsWindow.vala:70
 msgid "Hide failed or incomplete builds"
 msgstr "Nascondi build fallite o incomplete"
 
-#: src/Gtk/SettingsWindow.vala:57
+#: src/Gtk/SettingsWindow.vala:73
 #, c-format
 msgid ""
 "If a kernel version exists on the mainline-ppa site, but is an incomplete or "
@@ -658,77 +658,77 @@ msgstr ""
 "Se una versione del kernel esiste sul sito mainline-ppa, ma è una build "
 "incompleta o fallita per il tuo arch (%s), allora non mostrarla nell'elenco."
 
-#: src/Gtk/SettingsWindow.vala:63
+#: src/Gtk/SettingsWindow.vala:79
 #, c-format
 msgid "Hide flavors other than %s"
 msgstr "Nascondi le versioni diverse da %s"
 
-#: src/Gtk/SettingsWindow.vala:66
+#: src/Gtk/SettingsWindow.vala:82
 #, c-format
 msgid "Don't show the alternative flavors such as %s and %s"
 msgstr "Non mostrare le versioni alternative tipo %s e %s"
 
-#: src/Gtk/SettingsWindow.vala:80
+#: src/Gtk/SettingsWindow.vala:96
 msgid "prior major versions  ( -1 = all )"
 msgstr "versioni principali precedenti ( -1 = tutte )"
 
-#: src/Gtk/SettingsWindow.vala:88
+#: src/Gtk/SettingsWindow.vala:104
 msgid "Notification"
 msgstr "Notifiche"
 
-#: src/Gtk/SettingsWindow.vala:95
+#: src/Gtk/SettingsWindow.vala:111
 msgid "Notify if a major release is available"
 msgstr "Notifica se una rilascio principale è disponibile"
 
-#: src/Gtk/SettingsWindow.vala:101
+#: src/Gtk/SettingsWindow.vala:117
 msgid "Notify if a minor release is available"
 msgstr "Notifica se una rilascio minore è disponibile"
 
-#: src/Gtk/SettingsWindow.vala:108
+#: src/Gtk/SettingsWindow.vala:124
 msgid "Seconds interval enabled for debugging"
 msgstr "Intervallo in secondi abilitato per il debug"
 
-#: src/Gtk/SettingsWindow.vala:127
+#: src/Gtk/SettingsWindow.vala:143
 msgid "Check every"
 msgstr "Controlla ogni"
 
-#: src/Gtk/SettingsWindow.vala:137
+#: src/Gtk/SettingsWindow.vala:153
 msgid "Hours"
 msgstr "Ore"
 
-#: src/Gtk/SettingsWindow.vala:138
+#: src/Gtk/SettingsWindow.vala:154
 msgid "Days"
 msgstr "Giorni"
 
-#: src/Gtk/SettingsWindow.vala:139
+#: src/Gtk/SettingsWindow.vala:155
 msgid "Weeks"
 msgstr "Settimane"
 
-#: src/Gtk/SettingsWindow.vala:140
+#: src/Gtk/SettingsWindow.vala:156
 msgid "Seconds"
 msgstr "Secondi"
 
-#: src/Gtk/SettingsWindow.vala:149
+#: src/Gtk/SettingsWindow.vala:165
 msgid "Network"
 msgstr "Rete"
 
-#: src/Gtk/SettingsWindow.vala:159
+#: src/Gtk/SettingsWindow.vala:175
 msgid "Connection Timeout:"
 msgstr "Timeout della connessione:"
 
-#: src/Gtk/SettingsWindow.vala:167
+#: src/Gtk/SettingsWindow.vala:183
 msgid "seconds"
 msgstr "secondi"
 
-#: src/Gtk/SettingsWindow.vala:175
+#: src/Gtk/SettingsWindow.vala:191
 msgid "Concurrent Downloads:"
 msgstr "Scaricamenti Contemporanei:"
 
-#: src/Gtk/SettingsWindow.vala:185
+#: src/Gtk/SettingsWindow.vala:201
 msgid "Verify Checksums"
 msgstr "Controlla i Checksum"
 
-#: src/Gtk/SettingsWindow.vala:188
+#: src/Gtk/SettingsWindow.vala:204
 msgid ""
 "Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
 "downloads."
@@ -736,11 +736,11 @@ msgstr ""
 "Usa gli hash sha-256 dal file CHECKSUMS per verificare i download del file *."
 "deb."
 
-#: src/Gtk/SettingsWindow.vala:192
+#: src/Gtk/SettingsWindow.vala:208
 msgid "Keep Debs"
 msgstr "Conserva i Deb"
 
-#: src/Gtk/SettingsWindow.vala:195
+#: src/Gtk/SettingsWindow.vala:211
 msgid ""
 "Retain downloaded *.deb files after install and re-use them for uninstall/"
 "reinstall instead of downloading again."
@@ -748,7 +748,7 @@ msgstr ""
 "Conserva i file .deb scaricati dopo l'installazione e riutilizzali per la "
 "disinstallazione/reinstallazione invece di scaricarli di nuovo."
 
-#: src/Gtk/SettingsWindow.vala:197
+#: src/Gtk/SettingsWindow.vala:213
 msgid ""
 "They are still deleted once they become older than the \"prior major "
 "versions\" setting, or if they have been updated on the mainline-ppa site."
@@ -756,11 +756,11 @@ msgstr ""
 "Vengono comunque cancellati quando diventano più vecchi delle \"versioni "
 "precedenti maggiore\" o se sono stati aggiornati sul sito mainline-ppa."
 
-#: src/Gtk/SettingsWindow.vala:203
+#: src/Gtk/SettingsWindow.vala:219
 msgid "Keep Cache"
 msgstr "Conserva la Cache"
 
-#: src/Gtk/SettingsWindow.vala:206
+#: src/Gtk/SettingsWindow.vala:222
 msgid ""
 "Don't trim the cached index.html files to just the installed versions and "
 "higher, instead essentially maintain a local mirror of the entire history "
@@ -770,14 +770,14 @@ msgstr ""
 "installate e superiori, invece sostanzialmente mantiene un mirror locale "
 "della cronologiadal sito mainline-ppa."
 
-#: src/Gtk/SettingsWindow.vala:208
+#: src/Gtk/SettingsWindow.vala:224
 msgid ""
 "This speeds up some things a little at the cost of about 20M of hard drive "
 "space."
 msgstr ""
 "Questo accelera un po' alcune cose occupando circa 20M sul disco rigido."
 
-#: src/Gtk/SettingsWindow.vala:209
+#: src/Gtk/SettingsWindow.vala:225
 msgid ""
 "It skips a step on every startup that loops through all known kernel "
 "versions just to see if there are any old ones to delete, and avoids "
@@ -789,73 +789,73 @@ msgstr ""
 "eliminare ed evitadi eliminare e riscaricare nuovamente gli stessi file se "
 "si modifica l'impostazione delle \"versioni maggiori precedenti\" ."
 
-#: src/Gtk/SettingsWindow.vala:211
+#: src/Gtk/SettingsWindow.vala:227
 msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
 msgstr ""
 "Per la 6.5.x la cache completa è circa 22M, quella ridotta è di circa 2M."
 
-#: src/Gtk/SettingsWindow.vala:217
+#: src/Gtk/SettingsWindow.vala:233
 msgid "Proxy"
 msgstr "Proxy"
 
-#: src/Gtk/SettingsWindow.vala:229
+#: src/Gtk/SettingsWindow.vala:245
 msgid "Mainline-PPA URL"
 msgstr "URL del Mainline-PPA"
 
-#: src/Gtk/SettingsWindow.vala:246
+#: src/Gtk/SettingsWindow.vala:262
 msgid "User Agent String"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:261
+#: src/Gtk/SettingsWindow.vala:277
 msgid "External Commands"
 msgstr "Comandi Esterni"
 
-#: src/Gtk/SettingsWindow.vala:268
+#: src/Gtk/SettingsWindow.vala:284
 msgid "Superuser Authorization"
 msgstr "Autorizzazione del Superutente"
 
-#: src/Gtk/SettingsWindow.vala:290
+#: src/Gtk/SettingsWindow.vala:306
 msgid "Command used to run dpkg with root permissions."
 msgstr "Comando usato per eseguire dpkg con i permesi di root"
 
-#: src/Gtk/SettingsWindow.vala:292
+#: src/Gtk/SettingsWindow.vala:308
 #, no-c-format
 msgid "The dpkg command is appended to the end, unless a %s is present."
 msgstr ""
 "Il comando dpkg è aggiunto in fondo, a meno che non sia presente un %s."
 
-#: src/Gtk/SettingsWindow.vala:293
+#: src/Gtk/SettingsWindow.vala:309
 #, no-c-format
 msgid "If a %s is present, then the %s is replaced with the dpkg command."
 msgstr "Se è presente un %s, allora il %s è sostituito con il comando dpkg"
 
-#: src/Gtk/SettingsWindow.vala:294 src/Gtk/SettingsWindow.vala:327
+#: src/Gtk/SettingsWindow.vala:310 src/Gtk/SettingsWindow.vala:343
 msgid "The built-in list contains examples of both."
 msgstr "L'elenco integrato contiene esempi di entrambi."
 
-#: src/Gtk/SettingsWindow.vala:296 src/Gtk/SettingsWindow.vala:333
+#: src/Gtk/SettingsWindow.vala:312 src/Gtk/SettingsWindow.vala:349
 msgid ""
 "To modify any of the built-in default commands, just select it and edit."
 msgstr ""
 "Per modificare uno qualsiasi dei comandi predefiniti integrati, basta "
 "selezionarlo e modificarlo."
 
-#: src/Gtk/SettingsWindow.vala:297 src/Gtk/SettingsWindow.vala:334
+#: src/Gtk/SettingsWindow.vala:313 src/Gtk/SettingsWindow.vala:350
 msgid ""
 "The edited command is saved in the config file, the original is not changed."
 msgstr ""
 "Il comando modificato viene salvato nel file di configurazione, l'originale "
 "non viene modificato."
 
-#: src/Gtk/SettingsWindow.vala:301
+#: src/Gtk/SettingsWindow.vala:317
 msgid "Terminal Window"
 msgstr "Finestra del Terminale"
 
-#: src/Gtk/SettingsWindow.vala:323
+#: src/Gtk/SettingsWindow.vala:339
 msgid "Terminal command used to run"
 msgstr "Comando di terminale utilizzato per eseguire"
 
-#: src/Gtk/SettingsWindow.vala:325
+#: src/Gtk/SettingsWindow.vala:341
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
@@ -863,7 +863,7 @@ msgstr ""
 "Il comando installa/disinstall è aggiunto in fondo, a meno che non sia "
 "presente un %s."
 
-#: src/Gtk/SettingsWindow.vala:326
+#: src/Gtk/SettingsWindow.vala:342
 #, no-c-format
 msgid ""
 "If a %s is present, then the %s is replaced with the install/uninstall "
@@ -872,7 +872,7 @@ msgstr ""
 "Se è presente un %s, allora %s viene sostituito con il comando di installa/"
 "disinstalla."
 
-#: src/Gtk/SettingsWindow.vala:329
+#: src/Gtk/SettingsWindow.vala:345
 msgid ""
 "The terminal program must stay in the foreground and block while the command "
 "is running, not fork and return immediately."
@@ -880,7 +880,7 @@ msgstr ""
 "Il programma terminale deve restare in primo piano e bloccarsi mentre il "
 "comandoè in esecuzione, non dividersi e tornare indietro immediatamente."
 
-#: src/Gtk/SettingsWindow.vala:330
+#: src/Gtk/SettingsWindow.vala:346
 msgid ""
 "Most terminal programs block by default, some require special commandline "
 "options."
@@ -888,7 +888,7 @@ msgstr ""
 "La maggior parte dei programmi terminali si bloccano per impostazione "
 "predefinita, alcuni richiedono delle opzioni specialinella riga di comando."
 
-#: src/Gtk/SettingsWindow.vala:331
+#: src/Gtk/SettingsWindow.vala:347
 #, c-format
 msgid "For example, %s requires \"%s\"."
 msgstr "Per esempio, %s richiede \"%s\"."

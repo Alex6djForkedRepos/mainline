@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: mainline\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 00:44-0400\n"
+"POT-Creation-Date: 2026-07-10 10:22-0400\n"
 "PO-Revision-Date: 2022-09-22 12:13+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian\n"
@@ -538,7 +538,7 @@ msgstr "obavijest o glavnim izdanjima onemogućena"
 msgid "Kernel %s Available"
 msgstr "Kernel %s je dostupan"
 
-#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:90
 msgid "Show"
 msgstr "Prikaži"
 
@@ -630,23 +630,23 @@ msgstr "dostupno"
 msgid "Configuration"
 msgstr "Konfiguracija"
 
-#: src/Gtk/SettingsWindow.vala:24
+#: src/Gtk/SettingsWindow.vala:31
 msgid "Done"
 msgstr "Gotovo"
 
-#: src/Gtk/SettingsWindow.vala:40
+#: src/Gtk/SettingsWindow.vala:56
 msgid "Filter"
 msgstr "Filter"
 
-#: src/Gtk/SettingsWindow.vala:47
+#: src/Gtk/SettingsWindow.vala:63
 msgid "Hide RC and unstable releases"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:54
+#: src/Gtk/SettingsWindow.vala:70
 msgid "Hide failed or incomplete builds"
 msgstr "Sakrij neuspjele ili nedovršene gradnje"
 
-#: src/Gtk/SettingsWindow.vala:57
+#: src/Gtk/SettingsWindow.vala:73
 #, c-format
 msgid ""
 "If a kernel version exists on the mainline-ppa site, but is an incomplete or "
@@ -655,77 +655,77 @@ msgstr ""
 "Ako verzija kernela postoji na web-mjestu mainline-ppa, ali je nepotpuna ili "
 "neuspjela izgradnja za vaš luk (%s), nemojte je prikazivati na popisu."
 
-#: src/Gtk/SettingsWindow.vala:63
+#: src/Gtk/SettingsWindow.vala:79
 #, c-format
 msgid "Hide flavors other than %s"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:66
+#: src/Gtk/SettingsWindow.vala:82
 #, c-format
 msgid "Don't show the alternative flavors such as %s and %s"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:80
+#: src/Gtk/SettingsWindow.vala:96
 msgid "prior major versions  ( -1 = all )"
 msgstr "prethodne glavne verzije  ( -1 = sve )"
 
-#: src/Gtk/SettingsWindow.vala:88
+#: src/Gtk/SettingsWindow.vala:104
 msgid "Notification"
 msgstr "Obavijesti"
 
-#: src/Gtk/SettingsWindow.vala:95
+#: src/Gtk/SettingsWindow.vala:111
 msgid "Notify if a major release is available"
 msgstr "Obavijesti ako je dostupno glavno izdanje"
 
-#: src/Gtk/SettingsWindow.vala:101
+#: src/Gtk/SettingsWindow.vala:117
 msgid "Notify if a minor release is available"
 msgstr "Obavijesti ako je dostupno manje izdanje"
 
-#: src/Gtk/SettingsWindow.vala:108
+#: src/Gtk/SettingsWindow.vala:124
 msgid "Seconds interval enabled for debugging"
 msgstr "Interval sekundi omogućen za ispravljanje pogrešaka"
 
-#: src/Gtk/SettingsWindow.vala:127
+#: src/Gtk/SettingsWindow.vala:143
 msgid "Check every"
 msgstr "Provjeri svaka"
 
-#: src/Gtk/SettingsWindow.vala:137
+#: src/Gtk/SettingsWindow.vala:153
 msgid "Hours"
 msgstr "Sati"
 
-#: src/Gtk/SettingsWindow.vala:138
+#: src/Gtk/SettingsWindow.vala:154
 msgid "Days"
 msgstr "Dani"
 
-#: src/Gtk/SettingsWindow.vala:139
+#: src/Gtk/SettingsWindow.vala:155
 msgid "Weeks"
 msgstr "Tjedna"
 
-#: src/Gtk/SettingsWindow.vala:140
+#: src/Gtk/SettingsWindow.vala:156
 msgid "Seconds"
 msgstr "Sekunde"
 
-#: src/Gtk/SettingsWindow.vala:149
+#: src/Gtk/SettingsWindow.vala:165
 msgid "Network"
 msgstr "Mreža"
 
-#: src/Gtk/SettingsWindow.vala:159
+#: src/Gtk/SettingsWindow.vala:175
 msgid "Connection Timeout:"
 msgstr "Vrijeme povezanosti je isteklo:"
 
-#: src/Gtk/SettingsWindow.vala:167
+#: src/Gtk/SettingsWindow.vala:183
 msgid "seconds"
 msgstr "sekunde"
 
-#: src/Gtk/SettingsWindow.vala:175
+#: src/Gtk/SettingsWindow.vala:191
 msgid "Concurrent Downloads:"
 msgstr "Istovremena preuzimanja:"
 
-#: src/Gtk/SettingsWindow.vala:185
+#: src/Gtk/SettingsWindow.vala:201
 msgid "Verify Checksums"
 msgstr "Provjerite kontrolne zbrojeve"
 
-#: src/Gtk/SettingsWindow.vala:188
+#: src/Gtk/SettingsWindow.vala:204
 msgid ""
 "Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
 "downloads."
@@ -733,11 +733,11 @@ msgstr ""
 "Upotrijebite sha-256 hashove iz CHECKSUMS datoteke za provjeru preuzimanja *."
 "deb datoteke."
 
-#: src/Gtk/SettingsWindow.vala:192
+#: src/Gtk/SettingsWindow.vala:208
 msgid "Keep Debs"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:195
+#: src/Gtk/SettingsWindow.vala:211
 msgid ""
 "Retain downloaded *.deb files after install and re-use them for uninstall/"
 "reinstall instead of downloading again."
@@ -745,30 +745,30 @@ msgstr ""
 "Zadrži preuzete .deb datoteke nakon instalacije i ponovno ih upotrijebi za "
 "deinstalaciju/ponovnu instalaciju umjesto ponovnog preuzimanja."
 
-#: src/Gtk/SettingsWindow.vala:197
+#: src/Gtk/SettingsWindow.vala:213
 msgid ""
 "They are still deleted once they become older than the \"prior major "
 "versions\" setting, or if they have been updated on the mainline-ppa site."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:203
+#: src/Gtk/SettingsWindow.vala:219
 msgid "Keep Cache"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:206
+#: src/Gtk/SettingsWindow.vala:222
 msgid ""
 "Don't trim the cached index.html files to just the installed versions and "
 "higher, instead essentially maintain a local mirror of the entire history "
 "from the mainline-ppa site."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:208
+#: src/Gtk/SettingsWindow.vala:224
 msgid ""
 "This speeds up some things a little at the cost of about 20M of hard drive "
 "space."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:209
+#: src/Gtk/SettingsWindow.vala:225
 msgid ""
 "It skips a step on every startup that loops through all known kernel "
 "versions just to see if there are any old ones to delete, and avoids "
@@ -776,67 +776,67 @@ msgid ""
 "versions\" setting up and down."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:211
+#: src/Gtk/SettingsWindow.vala:227
 msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:217
+#: src/Gtk/SettingsWindow.vala:233
 msgid "Proxy"
 msgstr "Proxy"
 
-#: src/Gtk/SettingsWindow.vala:229
+#: src/Gtk/SettingsWindow.vala:245
 msgid "Mainline-PPA URL"
 msgstr "Mainline-PPA URL"
 
-#: src/Gtk/SettingsWindow.vala:246
+#: src/Gtk/SettingsWindow.vala:262
 msgid "User Agent String"
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:261
+#: src/Gtk/SettingsWindow.vala:277
 msgid "External Commands"
 msgstr "Vanjske Naredbe"
 
-#: src/Gtk/SettingsWindow.vala:268
+#: src/Gtk/SettingsWindow.vala:284
 msgid "Superuser Authorization"
 msgstr "Autorizacija superkorisnika"
 
-#: src/Gtk/SettingsWindow.vala:290
+#: src/Gtk/SettingsWindow.vala:306
 msgid "Command used to run dpkg with root permissions."
 msgstr "Naredba koja se koristi za pokretanje dpkg s root dopuštenjima."
 
-#: src/Gtk/SettingsWindow.vala:292
+#: src/Gtk/SettingsWindow.vala:308
 #, no-c-format
 msgid "The dpkg command is appended to the end, unless a %s is present."
 msgstr "Naredba dpkg dodaje se na kraj, osim ako %s nije prisutan."
 
-#: src/Gtk/SettingsWindow.vala:293
+#: src/Gtk/SettingsWindow.vala:309
 #, no-c-format
 msgid "If a %s is present, then the %s is replaced with the dpkg command."
 msgstr "Ako je %s prisutan, tada se %s zamjenjuje naredbom dpkg."
 
-#: src/Gtk/SettingsWindow.vala:294 src/Gtk/SettingsWindow.vala:327
+#: src/Gtk/SettingsWindow.vala:310 src/Gtk/SettingsWindow.vala:343
 msgid "The built-in list contains examples of both."
 msgstr "Ugrađeni popis sadrži primjere oba."
 
-#: src/Gtk/SettingsWindow.vala:296 src/Gtk/SettingsWindow.vala:333
+#: src/Gtk/SettingsWindow.vala:312 src/Gtk/SettingsWindow.vala:349
 msgid ""
 "To modify any of the built-in default commands, just select it and edit."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:297 src/Gtk/SettingsWindow.vala:334
+#: src/Gtk/SettingsWindow.vala:313 src/Gtk/SettingsWindow.vala:350
 msgid ""
 "The edited command is saved in the config file, the original is not changed."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:301
+#: src/Gtk/SettingsWindow.vala:317
 msgid "Terminal Window"
 msgstr "Prozor terminala"
 
-#: src/Gtk/SettingsWindow.vala:323
+#: src/Gtk/SettingsWindow.vala:339
 msgid "Terminal command used to run"
 msgstr "Naredba terminala koja se koristi za pokretanje"
 
-#: src/Gtk/SettingsWindow.vala:325
+#: src/Gtk/SettingsWindow.vala:341
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
@@ -844,7 +844,7 @@ msgstr ""
 "Naredba za instalaciju/deinstalaciju dodaje se na kraj, osim ako %s nije "
 "prisutan."
 
-#: src/Gtk/SettingsWindow.vala:326
+#: src/Gtk/SettingsWindow.vala:342
 #, no-c-format
 msgid ""
 "If a %s is present, then the %s is replaced with the install/uninstall "
@@ -853,7 +853,7 @@ msgstr ""
 "Ako je prisutan %s, tada se %s zamjenjuje naredbom za instaliranje/"
 "deinstaliranje."
 
-#: src/Gtk/SettingsWindow.vala:329
+#: src/Gtk/SettingsWindow.vala:345
 msgid ""
 "The terminal program must stay in the foreground and block while the command "
 "is running, not fork and return immediately."
@@ -861,13 +861,13 @@ msgstr ""
 "Terminalni program mora ostati u prvom planu i blokirati dok se naredba "
 "izvodi, a ne račvati se i odmah se vraćati."
 
-#: src/Gtk/SettingsWindow.vala:330
+#: src/Gtk/SettingsWindow.vala:346
 msgid ""
 "Most terminal programs block by default, some require special commandline "
 "options."
 msgstr ""
 
-#: src/Gtk/SettingsWindow.vala:331
+#: src/Gtk/SettingsWindow.vala:347
 #, c-format
 msgid "For example, %s requires \"%s\"."
 msgstr ""

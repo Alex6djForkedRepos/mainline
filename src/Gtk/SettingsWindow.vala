@@ -7,14 +7,21 @@ public class SettingsWindow : Gtk.Window {
 
 		const int SPACING = 6;
 
-		this.set_transient_for(parent);
-		this.set_modal(true);
-		this.title = BRANDING_LONGNAME + " " +_("Configuration");
-		this.window_position = Gtk.WindowPosition.CENTER_ON_PARENT;
+		set_transient_for(parent);
+		set_modal(true);
+		title = BRANDING_LONGNAME + " " +_("Configuration");
+		window_position = Gtk.WindowPosition.CENTER_ON_PARENT;
+
+		// globals for close button
+		var ent_proxy = new Gtk.Entry ();
+		var ent_ppaurl = new Gtk.Entry ();
+		var ent_useragent = new Gtk.Entry ();
+		var cbt_authcmd = new Gtk.ComboBoxText.with_entry();
+		var cbt_termcmd = new Gtk.ComboBoxText.with_entry();
 
 		// vbox_main holds the notebook and the close button
 		var vbox_main = new Gtk.Box(Gtk.Orientation.VERTICAL,0);
-		this.add(vbox_main);
+		add(vbox_main);
 
 		// notebook holds a page for each settings section
 		var notebook = new Gtk.Notebook();
@@ -23,7 +30,16 @@ public class SettingsWindow : Gtk.Window {
 		// close button outside of notebook always visible
 		var btn_close = new Gtk.Button.with_label(_("Done"));
 		vbox_main.add(btn_close);
-		btn_close.clicked.connect(close);
+		//btn_close.clicked.connect(close);
+		btn_close.clicked.connect(() => {
+			// save the current contents of text input fields to be saved even if the user didn't press enter in them
+			App.all_proxy = ent_proxy.get_text();
+			App.ppa_uri = ent_ppaurl.get_text().strip();
+			App.user_agent = ent_useragent.get_text();
+			App.auth_cmd = cbt_authcmd.get_active_text().strip();
+			App.term_cmd = cbt_termcmd.get_active_text().strip();
+			close();
+		});
 
 		// fill the notebook pages
 		Gtk.Box pgbox;
@@ -218,7 +234,7 @@ public class SettingsWindow : Gtk.Window {
 		pgbox.add(label);
 		label.xalign = 0;
 
-		var ent_proxy = new Gtk.Entry ();
+		//var ent_proxy = new Gtk.Entry ();
 		pgbox.add(ent_proxy);
 		ent_proxy.set_placeholder_text("[http://][USER:PASSWORD@]HOST[:PORT]");
 		//ent_proxy.set_tooltip_text(_("..."));
@@ -230,7 +246,7 @@ public class SettingsWindow : Gtk.Window {
 		pgbox.add(label);
 		label.xalign = 0;
 
-		var ent_ppaurl = new Gtk.Entry ();
+		//var ent_ppaurl = new Gtk.Entry ();
 		pgbox.add(ent_ppaurl);
 		//ent_ppaurl.set_tooltip_text(_("..."));
 		ent_ppaurl.set_text(App.ppa_uri);
@@ -247,7 +263,7 @@ public class SettingsWindow : Gtk.Window {
 		pgbox.add(label);
 		label.xalign = 0;
 
-		var ent_useragent = new Gtk.Entry ();
+		//var ent_useragent = new Gtk.Entry ();
 		pgbox.add(ent_useragent);
 		//ent_useragent.set_placeholder_text("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:138.0) Gecko/20100101 Firefox/138.0");
 		//ent_useragent.set_tooltip_text(_("The mainline-ppa site currently blocks traffic from Aria (the http client we use to download files), so use this http client user-agent string instead of Arias normal string."));
@@ -269,7 +285,7 @@ public class SettingsWindow : Gtk.Window {
 		pgbox.add(label);
 		label.xalign = 0;
 
-		var cbt_authcmd = new Gtk.ComboBoxText.with_entry();
+		//var cbt_authcmd = new Gtk.ComboBoxText.with_entry();
 		pgbox.add(cbt_authcmd);
 		cbt_authcmd.active = -1;
 		for (int i=0;i<DEFAULT_AUTH_CMDS.length;i++) {
@@ -302,7 +318,7 @@ public class SettingsWindow : Gtk.Window {
 		pgbox.add(label);
 		label.xalign = 0;
 
-		var cbt_termcmd = new Gtk.ComboBoxText.with_entry();
+		//var cbt_termcmd = new Gtk.ComboBoxText.with_entry();
 		pgbox.add(cbt_termcmd);
 		cbt_termcmd.active = -1;
 		for (int i=0;i<DEFAULT_TERM_CMDS.length;i++) {
