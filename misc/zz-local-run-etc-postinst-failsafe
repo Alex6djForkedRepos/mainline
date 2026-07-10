@@ -1,0 +1,49 @@
+#!/bin/sh
+# /usr/share/kernel/postinst.d/zz-local-run-etc-postinst-failsafe
+# Temporary work-around for mainline kernel packages with broken post-install scripts. (7.1.1+)
+# github/rhardy613 - https://github.com/bkw777/mainline/issues/374#issuecomment-4882549787
+# Must be installed in /usr/share/kernel/postinst.d NOT /etc/kernel/postinst.d
+# Do not create the directory just to install this script if it doesn't already exist.
+# If your system doesn't have this directory, then this problem and this work-around for it doesn't apply to you.
+# You should remove this script when new ubuntu mainline kernel packages are no longer broken.
+
+set -e
+
+PATH=/usr/sbin:/usr/bin:/sbin:/bin
+
+version="$1"
+image_path="$2"
+
+# Kernel postinst hooks are called as:
+#   hook VERSION IMAGE_PATH
+#
+# This is a failsafe for broken linux-image postinst scripts that trigger
+# only /usr/share/kernel/postinst.d and accidentally skip /etc/kernel/postinst.d.
+
+[ -n "$version" ] || exit 0
+[ -n "$image_path" ] || image_path="/boot/vmlinuz-$version"
+
+# Avoid duplicate work on correctly-packaged kernels where /etc hooks already ran.
+# Ubuntu/mainline kernels should normally have an initrd.
+if [ -e "/boot/initrd.img-$version" ]; then
+    exit 0
+fi
+
+echo "zz-local-run-etc-postinst-failsafe: /boot/initrd.img-$version missing; running /etc/kernel/postinst.d hooks"
+
+if [ -d /etc/kernel/postinst.d ]; then
+    DEB_MAINT_PARAMS="${DEB_MAINT_PARAMS:-configure}" \
+        run-parts --report --exit-on-error \
+        --arg="$version" \
+        --arg="$image_path" \
+        /etc/kernel/postinst.d
+fi
+
+# Belt-and-suspenders fallback in case the initramfs-tools hook was absent
+# or did not create the image for some reason.
+if [ ! -e "/boot/initrd.img-$version" ] && command -v update-initramfs >/dev/null 2>&1; then
+    echo "zz-local-run-etc-postinst-failsafe: forcing initramfs creation for $version"
+    update-initramfs -c -k "$version"
+fi
+
+exit 0

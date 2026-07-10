@@ -142,6 +142,13 @@ Sorting on the "Status" column is a way to see all installed kernels together.
 Sorting on the "Notes" column is a way to see all kernels that have any notes together.  
 
 # Help / FAQ
+## 7.1.1+ on systems that have a /usr/share/kernel/postinst.d/ directory  
+If you don't have that directory then this does NOT apply to you.  
+(Don't create the dir just to install the script, you will just be *giving yourself* the problem and it's work-around at the same time.)  
+```
+$ sudo install -t /usr/share/kernel/postinst.d/ misc/zz-local-run-etc-postinst-failsafe 
+```
+details: https://github.com/bkw777/mainline/issues/374#issuecomment-4882549787  
 
 ## Kernel Packages built after 2026-03-25  
 To install 6.19.11 or later on older systems, upgrade debianutils first:  
